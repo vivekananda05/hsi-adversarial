@@ -1,0 +1,32 @@
+DATASET:
+  NAME: KSC
+  ROOT: /home/vivek/HSI_DATA
+  HSI:
+    HSI_FILE: KSC.mat
+    GT_FILE: KSC_gt.mat
+    HSI_KEY: KSC
+    GT_KEY: KSC_gt
+    CLASS_NAMES:
+    - Scrub
+    - Willow swamp
+    - Cabbage palm hammock
+    - Cabbage palm oak hammock
+    - Slash pine
+    - Oak broadleaf hammock
+    - Hardwood swamp
+    - Graminoid marsh
+    - Spartina marsh
+    - Cattail marsh
+    - Salt marsh
+    - Mud flats
+    - Water
+    PATCH_SIZE: 13
+    STRIDE: 1
+    IGNORED_LABELS:
+    - 0
+    TRAIN_RATIO: 0.6
+    VAL_RATIO: 0.2
+    FLIP: true
+    RADIATION: true
+    MIXTURE: true
+    SPLIT_FILE: split_KSC.json

@@ -1,0 +1,35 @@
+DATASET:
+  NAME: Indian_pines
+  ROOT: /home/vivek/HSI_DATA
+  HSI:
+    HSI_FILE: Indian_pines.mat
+    GT_FILE: Indian_pines_gt.mat
+    HSI_KEY: indian_pines_corrected
+    GT_KEY: indian_pines_gt
+    CLASS_NAMES:
+    - Alfalfa
+    - Corn notill
+    - Corn mintill
+    - Corn
+    - Grass pasture
+    - Grass trees
+    - Grass pasture mowed
+    - Hay windrowed
+    - Oats
+    - Soybean notill
+    - Soybean mintill
+    - Soybean clean
+    - Wheat
+    - Woods
+    - Buildings grass trees drives
+    - Stone steel towers
+    PATCH_SIZE: 13
+    STRIDE: 1
+    IGNORED_LABELS:
+    - 0
+    TRAIN_RATIO: 0.6
+    VAL_RATIO: 0.2
+    FLIP: true
+    RADIATION: true
+    MIXTURE: true
+    SPLIT_FILE: split_Indian_pines.json

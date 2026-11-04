@@ -1,0 +1,28 @@
+DATASET:
+  NAME: PaviaC
+  ROOT: /home/vivek/HSI_DATA
+  HSI:
+    HSI_FILE: PaviaC.mat
+    GT_FILE: PaviaC_gt.mat
+    HSI_KEY: ''
+    GT_KEY: ''
+    CLASS_NAMES:
+    - Water
+    - Trees
+    - Asphalt
+    - Self blocking bricks
+    - Bitumen
+    - Tiles
+    - Shadows
+    - Meadows
+    - Bare soil
+    PATCH_SIZE: 13
+    STRIDE: 1
+    IGNORED_LABELS:
+    - 0
+    TRAIN_RATIO: 0.6
+    VAL_RATIO: 0.2
+    FLIP: true
+    RADIATION: true
+    MIXTURE: true
+    SPLIT_FILE: split_PaviaC.json
